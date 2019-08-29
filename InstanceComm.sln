@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.705
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstanceComm", "InstanceComm\InstanceComm.csproj", "{724317C1-ED04-4FBD-ADC2-8DBB0ADA24D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstanceCommMediator", "InstanceComm\InstanceCommMediator.csproj", "{724317C1-ED04-4FBD-ADC2-8DBB0ADA24D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstanceCommWithoutMediator", "InstanceCommWithoutMediator\InstanceCommWithoutMediator.csproj", "{0BBD8FD4-5430-48D0-B9CC-F6714F691016}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstanceCommMediatR", "InstanceCommMediatR\InstanceCommMediatR.csproj", "{6F7F07DE-9494-4BA7-A400-06E12B82A7FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{724317C1-ED04-4FBD-ADC2-8DBB0ADA24D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{724317C1-ED04-4FBD-ADC2-8DBB0ADA24D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{724317C1-ED04-4FBD-ADC2-8DBB0ADA24D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BBD8FD4-5430-48D0-B9CC-F6714F691016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BBD8FD4-5430-48D0-B9CC-F6714F691016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BBD8FD4-5430-48D0-B9CC-F6714F691016}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BBD8FD4-5430-48D0-B9CC-F6714F691016}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F7F07DE-9494-4BA7-A400-06E12B82A7FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F7F07DE-9494-4BA7-A400-06E12B82A7FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F7F07DE-9494-4BA7-A400-06E12B82A7FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F7F07DE-9494-4BA7-A400-06E12B82A7FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
