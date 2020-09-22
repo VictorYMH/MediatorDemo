@@ -17,8 +17,6 @@ namespace InstanceCommMediator
     /// 5. 考虑群发功能，较于在中介者实例中注册与在外部注册
     /// 6. 发送前验证方法
     
-    /// Mediator Design Pattern.
-
     /// </summary>
 
     class MainApp
@@ -28,20 +26,20 @@ namespace InstanceCommMediator
 
             Chatroom SSWGroup = new Chatroom();
             
-            FrontEnd Shane = new FrontEnd("Shane");
-            FrontEnd Kristen = new FrontEnd("Kristen");
-            BackEnd Issac = new BackEnd("Issac");
-            BackEnd Victor = new BackEnd("Victor");
+            FrontEnd Nancy = new FrontEnd("Nancy");
+            FrontEnd Andrew = new FrontEnd("Andrew");
+            BackEnd Janet = new BackEnd("Janet");
+            BackEnd Michael = new BackEnd("Michael");
 
-            SSWGroup.Register(Shane);
-            SSWGroup.Register(Kristen);
-            SSWGroup.Register(Issac);
-            SSWGroup.Register(Victor);
+            SSWGroup.Register(Nancy);
+            SSWGroup.Register(Andrew);
+            SSWGroup.Register(Janet);
+            SSWGroup.Register(Michael);
 
-            Shane.Send("Issac", "You Idiot");
-            Kristen.Send("Shane", "message 1");
-            Issac.Send("Victor", "message 2");
-            Victor.Send("Kristen", "message 3");
+            Nancy.Send("Janet", "Idiot");
+            Andrew.Send("Nancy", "message 1");
+            Janet.Send("Michael", "message 2");
+            Michael.Send("Andrew", "message 3");
 
             Console.ReadKey();
         }

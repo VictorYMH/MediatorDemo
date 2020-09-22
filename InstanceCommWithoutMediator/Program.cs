@@ -8,15 +8,15 @@ namespace InstanceCommWithoutMediator
         static void Main(string[] args)
         {
 
-            FrontEnd Shane = new FrontEnd("Shane");
-            FrontEnd Kristen = new FrontEnd("Kristen");
-            BackEnd Issac = new BackEnd("Issac");
-            BackEnd Victor = new BackEnd("Victor");
+            FrontEnd Nancy = new FrontEnd("Nancy");
+            FrontEnd Andrew = new FrontEnd("Andrew");
+            BackEnd Janet = new BackEnd("Janet");
+            BackEnd Michael = new BackEnd("Michael");
 
-            Shane.Send(Issac, "You Idiot");
-            Kristen.Send(Shane, "message 1");
-            Issac.Send(Victor, "message 2");
-            Victor.Send(Shane, "message 3");
+            Nancy.Send(Janet, "You Idiot");
+            Andrew.Send(Nancy, "message 1");
+            Janet.Send(Michael, "message 2");
+            Michael.Send(Nancy, "message 3");
             Console.ReadKey();
         }
     }

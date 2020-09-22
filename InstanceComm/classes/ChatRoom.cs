@@ -46,20 +46,18 @@ namespace InstanceCommMediator.classes
             {
                 participant.Receive(from, message);
             }
+            //preprocess
             switch (participant.GetType().Name)
             {
                 case "BackEnd":
-                    //chat 10 min with girlfriend
                     if (participant.Name == "George")
                     {
                         participant.Send("John", "DAMN");
                     }
                     break;
                 case "FrontEnd":
-                    //chat 10 min with PM
                     break;
                 default:
-                    //do nothing
                     break;
             }
 
