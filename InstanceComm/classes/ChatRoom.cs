@@ -41,26 +41,13 @@ namespace InstanceCommMediator.classes
         public override void Send(
           string from, string to, string message)
         {
-            Participant participant = _participants[to];
-            if (participant != null)
-            {
-                participant.Receive(from, message);
-            }
             //preprocess
-            switch (participant.GetType().Name)
-            {
-                case "BackEnd":
-                    if (participant.Name == "George")
-                    {
-                        participant.Send("John", "DAMN");
-                    }
-                    break;
-                case "FrontEnd":
-                    break;
-                default:
-                    break;
-            }
+            Console.WriteLine("entered pre processor");
 
+            if (_participants[to] != null)
+            {
+                _participants[to].Receive(from, message);
+            }
         }
 
         public override void SendAll(

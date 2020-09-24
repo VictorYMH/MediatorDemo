@@ -26,7 +26,7 @@ namespace InstanceCommMediatR.classes
                 Participant from = request._ChatRoom.Participants[request._From];
                 if (from == null || to == null)
                 {
-                    throw new ArgumentNullException("user not excist");
+                    throw new ArgumentNullException("user not exist");
                 }
 
             },cancellationToken);
