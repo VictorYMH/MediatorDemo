@@ -1,5 +1,5 @@
-﻿using InstanceCommWithoutMediator.classes;
-using System;
+﻿using System;
+using InstanceCommWithoutMediator.classes;
 
 namespace InstanceCommWithoutMediator
 {

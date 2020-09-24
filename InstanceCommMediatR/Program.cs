@@ -2,7 +2,6 @@
 using System.Threading.Tasks;
 using InstanceCommMediatR.classes;
 using MediatR;
-using MediatR.Pipeline;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace InstanceCommMediatR

@@ -1,13 +1,8 @@
 ﻿using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace InstanceCommMediatR.classes
 {
-    public class SendMessage: IRequest<bool>
+    public class SendMessage : IRequest<bool>
     {
         //DI
         public SendMessage(ChatRoom chatRoom, string to, string from, string message)
@@ -19,7 +14,7 @@ namespace InstanceCommMediatR.classes
         }
 
         public ChatRoom _ChatRoom { get; }
-        
+
         public string _From { get; }
 
         public string _To { get; }

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace InstanceCommWithoutMediator.classes
 {
@@ -18,19 +16,19 @@ namespace InstanceCommWithoutMediator.classes
         {
             this._name = name;
         }
-        
+
 
         public string Name
         {
             get { return _name; }
         }
-        
+
 
         public void Send(Participant to, string message)
         {
             to.Receive(this.Name, message);
         }
-        
+
 
         public virtual void Receive(
           string from, string message)
@@ -40,7 +38,7 @@ namespace InstanceCommWithoutMediator.classes
         }
     }
 
-    class FrontEnd: Participant
+    class FrontEnd : Participant
 
     {
         // Constructor
@@ -50,8 +48,7 @@ namespace InstanceCommWithoutMediator.classes
         {
         }
 
-        public override void Receive(
-          string from, string message)
+        public override void Receive(string from, string message)
         {
             Console.Write("To a FrontEnd: ");
             base.Receive(from, message);
@@ -79,8 +76,7 @@ namespace InstanceCommWithoutMediator.classes
         {
         }
 
-        public override void Receive(
-          string from, string message)
+        public override void Receive(string from, string message)
         {
             Console.Write("To a BackEnd: ");
             base.Receive(from, message);

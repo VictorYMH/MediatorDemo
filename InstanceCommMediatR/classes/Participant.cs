@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace InstanceCommMediatR.classes
 {
@@ -19,26 +17,26 @@ namespace InstanceCommMediatR.classes
         {
             this._name = name;
         }
-        
+
 
         public string Name
         {
             get { return _name; }
         }
-        
+
 
         public ChatRoom Chatroom
         {
             set { _chatroom = value; }
             get { return _chatroom; }
         }
-        
+
 
         public void Send(Participant to, string message)
         {
             to.Receive(this.Name, message);
         }
-        
+
 
         public virtual void Receive(
           string from, string message)
@@ -48,7 +46,7 @@ namespace InstanceCommMediatR.classes
         }
     }
 
-    class FrontEnd: Participant
+    class FrontEnd : Participant
     {
         // Constructor
 
@@ -64,7 +62,7 @@ namespace InstanceCommMediatR.classes
             base.Receive(from, message);
         }
     }
-    
+
 
     class BackEnd : Participant
     {

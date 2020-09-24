@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace InstanceCommMediator.classes
 {
@@ -23,7 +22,6 @@ namespace InstanceCommMediator.classes
     /// </summary>
 
     class Chatroom : AbstractChatroom
-
     {
         private Dictionary<string, Participant> _participants =
           new Dictionary<string, Participant>();
@@ -38,8 +36,7 @@ namespace InstanceCommMediator.classes
             participant.Chatroom = this;
         }
 
-        public override void Send(
-          string from, string to, string message)
+        public override void Send(string from, string to, string message)
         {
             //preprocess
             Console.WriteLine("entered pre processor");
@@ -50,8 +47,7 @@ namespace InstanceCommMediator.classes
             }
         }
 
-        public override void SendAll(
-  string from, string message)
+        public override void SendAll(string from, string message)
         {
             throw new NotImplementedException();
         }

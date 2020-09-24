@@ -1,10 +1,7 @@
-﻿using MediatR;
-using MediatR.Pipeline;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
 using System.Threading;
 using System.Threading.Tasks;
+using MediatR.Pipeline;
 
 namespace InstanceCommMediatR.classes
 {
@@ -19,7 +16,7 @@ namespace InstanceCommMediatR.classes
 
         public Task Process(SendMessage request, CancellationToken cancellationToken)
         {
-            return Task.Factory.StartNew(() => 
+            return Task.Factory.StartNew(() =>
             {
                 Console.WriteLine("entered pre processor");
                 Participant to = request._ChatRoom.Participants[request._To];
@@ -29,7 +26,7 @@ namespace InstanceCommMediatR.classes
                     throw new ArgumentNullException("user not exist");
                 }
 
-            },cancellationToken);
+            }, cancellationToken);
             //return Task.Delay(1000, cancellationToken);
         }
     }

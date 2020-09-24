@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace InstanceCommMediatR.classes
 {
@@ -8,10 +6,10 @@ namespace InstanceCommMediatR.classes
     {
         public abstract void Register(Participant participant);
     }
-    public class ChatRoom: AbstractChatroom
+    public class ChatRoom : AbstractChatroom
     {
         public Dictionary<string, Participant> Participants { get; set; } = new Dictionary<string, Participant>();
-        public override void  Register(Participant participant)
+        public override void Register(Participant participant)
         {
             if (!Participants.ContainsValue(participant))
             {

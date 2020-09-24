@@ -1,42 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace InstanceCommMediator.classes
 {
 
     class Participant
-
     {
-        private Chatroom _chatroom;
-        private string _name;
-
         // Constructor
-
         public Participant(string name)
         {
-            this._name = name;
+            this.Name = name;
         }
-        
 
-        public string Name
-        {
-            get { return _name; }
-        }
-        
+        public string Name { get; }
 
-        public Chatroom Chatroom
-        {
-            set { _chatroom = value; }
-            get { return _chatroom; }
-        }
-        
+        public Chatroom Chatroom { set; get; }
 
         public void Send(string to, string message)
         {
-            _chatroom.Send(_name, to, message);
+            Chatroom.Send(Name, to, message);
         }
-        
 
         public virtual void Receive(
           string from, string message)
@@ -47,10 +29,8 @@ namespace InstanceCommMediator.classes
     }
 
     class FrontEnd : Participant
-
     {
         // Constructor
-
         public FrontEnd(string name)
           : base(name)
         {
@@ -62,10 +42,9 @@ namespace InstanceCommMediator.classes
             base.Receive(from, message);
         }
     }
-    
+
 
     class BackEnd : Participant
-
     {
         // Constructor
 
