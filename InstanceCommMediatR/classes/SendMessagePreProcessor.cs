@@ -7,11 +7,8 @@ namespace InstanceCommMediatR.classes
 {
     public class SendMessagePreProcessor : IRequestPreProcessor<SendMessage>
     {
-        //private readonly TextWriter _writer;
-
-        public SendMessagePreProcessor()//TextWriter writer)
+        public SendMessagePreProcessor()
         {
-            //_writer = writer;
         }
 
         public Task Process(SendMessage request, CancellationToken cancellationToken)
