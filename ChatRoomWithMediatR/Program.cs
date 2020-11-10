@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Threading.Tasks;
-using InstanceCommMediatR.classes;
+using ChatRoomWithMediatR.classes;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace InstanceCommMediatR
+namespace ChatRoomWithMediatR
 {
     public static class Program
     {

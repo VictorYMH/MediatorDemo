@@ -1,7 +1,7 @@
 ﻿using System;
-using InstanceCommMediator.classes;
+using ChatRoomWithMediator.classes;
 
-namespace InstanceCommMediator
+namespace ChatRoomWithMediator
 {
     /// <summary>
 

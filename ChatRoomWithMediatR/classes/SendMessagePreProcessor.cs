@@ -3,7 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using MediatR.Pipeline;
 
-namespace InstanceCommMediatR.classes
+namespace ChatRoomWithMediatR.classes
 {
     public class SendMessagePreProcessor : IRequestPreProcessor<SendMessage>
     {

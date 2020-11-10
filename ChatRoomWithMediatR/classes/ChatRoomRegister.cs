@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace InstanceCommMediatR.classes
+namespace ChatRoomWithMediatR.classes
 {
     public class ChatRoomRegister : IRequest<bool>
     {

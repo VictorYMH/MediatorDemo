@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace InstanceCommMediatR.classes
+namespace ChatRoomWithMediatR.classes
 {
     /// <summary>
     /// 

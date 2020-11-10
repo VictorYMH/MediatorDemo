@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace InstanceCommMediator.classes
+namespace ChatRoomWithMediator.classes
 {
     /// <summary>
     ///

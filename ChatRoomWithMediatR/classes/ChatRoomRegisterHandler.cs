@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using MediatR;
 
-namespace InstanceCommMediatR.classes
+namespace ChatRoomWithMediatR.classes
 {
 
     public class ChatRoomRegisterHandler : IRequestHandler<ChatRoomRegister, bool>

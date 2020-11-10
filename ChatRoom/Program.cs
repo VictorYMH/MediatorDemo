@@ -1,7 +1,7 @@
 ﻿using System;
-using InstanceCommWithoutMediator.classes;
+using ChatRoom.classes;
 
-namespace InstanceCommWithoutMediator
+namespace ChatRoom
 {
     class Program
     {

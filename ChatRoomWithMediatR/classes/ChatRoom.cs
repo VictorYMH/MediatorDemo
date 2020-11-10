@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace InstanceCommMediatR.classes
+namespace ChatRoomWithMediatR.classes
 {
     public abstract class AbstractChatroom
     {

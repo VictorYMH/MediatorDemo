@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace InstanceCommMediator.classes
+namespace ChatRoomWithMediator.classes
 {
 
     class Participant

@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.705
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstanceCommMediator", "InstanceComm\InstanceCommMediator.csproj", "{724317C1-ED04-4FBD-ADC2-8DBB0ADA24D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatRoomWithMediator", "ChatRoomWithMediator\ChatRoomWithMediator.csproj", "{724317C1-ED04-4FBD-ADC2-8DBB0ADA24D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstanceCommWithoutMediator", "InstanceCommWithoutMediator\InstanceCommWithoutMediator.csproj", "{0BBD8FD4-5430-48D0-B9CC-F6714F691016}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatRoom", "ChatRoom\ChatRoom.csproj", "{0BBD8FD4-5430-48D0-B9CC-F6714F691016}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InstanceCommMediatR", "InstanceCommMediatR\InstanceCommMediatR.csproj", "{6F7F07DE-9494-4BA7-A400-06E12B82A7FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChatRoomWithMediatR", "ChatRoomWithMediatR\ChatRoomWithMediatR.csproj", "{6F7F07DE-9494-4BA7-A400-06E12B82A7FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
